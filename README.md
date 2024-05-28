@@ -17,4 +17,8 @@ Working on support following datasets:
 - DRAC22
 - MAPLES-DR
 
-
+map:
+/data/dataset_x/{data.csv, *}     # path for downloaded dataset
+/src/loader.py                    # fiftyone dataset generic loading script: supporting grouped datasets, segmentation masks, multilabel indexing
+/src/metrics/{generate_data_X.py} # generate data.csv adding more metrics if needed
+/config.yaml                      # define which datasets will be loaded
